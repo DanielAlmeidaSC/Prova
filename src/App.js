@@ -10,6 +10,7 @@ import ListaCategoria from './paginas/ListaCategoria';
 // Importar páginas de Livro
 import ListaLivro from './paginas/ListaLivro';
 import FormLivro from './paginas/FormLivro';
+import FormEmprestimo from './paginas/FormEmprestimo';
 
 import DevolucaoLivros from './componentes/DevolucaoLivros';
 
@@ -40,8 +41,12 @@ function App() {
             {/* DEVOLUÇÃO DE LIVROS */}
             <Route path='/devolucaolivros' element={<DevolucaoLivros />} />
 
+            {/*Rota emprestimo */}
+            <Route path="/emprestarlivro/:id" element={<FormEmprestimo />} />
+
             {/* Rota padrão */}
             <Route path='*' element={<Home />} />
+
           </Routes>
         </div>
       </BrowserRouter>
