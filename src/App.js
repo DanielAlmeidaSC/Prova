@@ -16,6 +16,9 @@ import DevolucaoLivros from './componentes/DevolucaoLivros';
 
 import AcervoLivros from './paginas/AcervoLivros';
 
+import ListaFuncionarios from "./pages/ListaFuncionarios";
+import FormFuncionario from "./pages/FormFuncionario";
+
 function App() {
   return (
     <>
@@ -49,10 +52,15 @@ function App() {
             {/*Rota acervo */}
             <Route path="/acervolivros" element={<AcervoLivros />} />
 
+            {/*Rota lista funcionarios */}
+            <Route path="/funcionarios" element={<ListaFuncionarios />} />
+            {/*Rota form funcionarios */}
+            <Route path="/funcionarios/:id" element={<FormFuncionario />} />
+
             {/* Rota padrão */}
             <Route path='*' element={<Home />} />
 
-            
+
 
           </Routes>
         </div>
