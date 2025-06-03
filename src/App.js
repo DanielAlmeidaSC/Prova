@@ -14,6 +14,8 @@ import FormEmprestimo from './paginas/FormEmprestimo';
 
 import DevolucaoLivros from './componentes/DevolucaoLivros';
 
+import AcervoLivros from './paginas/AcervoLivros';
+
 function App() {
   return (
     <>
@@ -44,8 +46,13 @@ function App() {
             {/*Rota emprestimo */}
             <Route path="/emprestarlivro/:id" element={<FormEmprestimo />} />
 
+            {/*Rota acervo */}
+            <Route path="/acervolivros" element={<AcervoLivros />} />
+
             {/* Rota padrão */}
             <Route path='*' element={<Home />} />
+
+            
 
           </Routes>
         </div>
